@@ -1,0 +1,14 @@
+*{margin:0; padding: 0;}
+ body{ background: green; position: absolute; height:100%; width: 100%; overflow: hidden;}
+ .table{display: flex; flex-direction: row; flex-wrap: nowrap; align-items:center; justify-content: center;}
+ #computerTable{top:0%; height: 25%; width: 100%}
+ #playerTable{position:absolute; top:75%; height: 25%; width: 100% ; }
+ #globalTable{height: 50%; justify-content: flex-start;}
+ #cardsTable{width:60%; height: 100%;}
+ #trumpTable{width:20%;  height: 100%; justify-content: flex-start; padding-left:20px;}
+ .card{margin:auto; height:202px; width:145px; margin: 1%; transition: transform 0.25s; transform-style: preserve-3d;}
+ .card div {display: block; height: 100%; width: 100%; position: absolute; backface-visibility: hidden;}
+ .back {transform: rotateY( 180deg );}
+ .flipped {transform: rotateY( 180deg );}
+ #trump{position: relative; left:-73px; top:-50px; }
+ #deck{z-index: 10; position:relative;}
